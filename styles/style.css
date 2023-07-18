@@ -1,1 +1,265 @@
-/* место для вашего кода */
+/*Здесь у меня стили для Header*/
+header{
+    max-width: 1340px;
+    height: 109px;
+    margin: 0 auto;
+    margin-top: 92px;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin-bottom: 92px;
+    color: #000;
+}
+.header__menu{
+    max-width: 1340px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.header__block__contact{
+    justify-self: end;
+}
+.header__block__nav{
+    justify-self: start;
+}
+.logo-black{
+    width: 148px;
+    height: 105px;
+}
+.header__menu__ul__nav, 
+.footer__menu__ul{
+    display: flex;
+    flex-direction: row;
+    list-style: circle;
+    font-size: 18px;
+    line-height: 21px;
+}
+a.header__link{
+    margin-right: 32px;
+    text-decoration: none;
+}
+.header__li__a_middle,
+.header__li__a_last{
+    border-bottom: 1px solid black;
+}
+.header__menu__ul__contact,
+.footer__menu__nav{
+    list-style: none;
+    font-size: 18px;
+    width: 240px;
+    line-height: 24.3px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+.header__menu__ul__nav li{
+    text-decoration: none;
+}
+.header__menu__ul__nav li:first-child{
+    list-style: none;
+}
+
+/*Здесь начинаются стили для блока "Оно Тебе Надо"*/
+.cover{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/cover.jpg);
+    background-size: 1440px auto;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    max-height: 757px;
+    margin: 0 auto;
+    padding: 0px 50px 50px 50px;
+}
+h1{
+    color: #FFF;
+    font-family: RalewayBold, Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    padding-top: 165px;
+    margin-bottom: 138px;
+    display: flex;
+    flex-direction: column;
+}
+.title__ono{
+    align-self: flex-start;
+    line-height: 115px;
+}
+.title__tebe{
+    align-self: center;
+    line-height: 100px;
+}
+.title__nado{
+    width: 418px;
+    align-self: flex-end;
+    line-height: 100px;
+}
+.title__ls__60px{
+    letter-spacing: 60px;
+}
+.title__ono-tebe-nado{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cover__footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cover_text{
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-right: 78px;
+    word-spacing: 12px;
+    word-spacing: 0.5px;
+    letter-spacing: 2.5px;
+}
+.cover__button{
+    border: 1px solid #FFF;
+    padding: 12px 32px;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway,Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+/*Тут у меня стили для "Лоты"*/
+.lots{
+    margin: 0 auto;
+    max-width: 1340px;
+}
+.sub_title__lots{
+    margin: 180px 0px 27px 40px;
+    color: #000;
+    font-family: RalewayBold, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.lots__containers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.lots__title{
+    color: #FFF;
+    font-family: RalewayBold, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.lot__1, 
+.lot__2,
+.lot__3{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.lot__1{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-01.jpg);
+    background-size: 430px auto;
+    background-repeat: no-repeat;
+}
+.lot__2{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-02.jpg);
+    background-size: 430px auto;
+    background-repeat: no-repeat;
+}
+.lot__3{
+    margin-right: 0px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-03.jpg);
+    background-size: 430px auto;
+    background-repeat: no-repeat;
+}
+.lots__text{
+    color: #FFF;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.lots__link{
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    margin-left: 40px;
+}
+
+/*Тут стили для блока "Об аукционе"*/
+.about{
+    margin: 0 auto;
+    margin-top: 182px;
+    max-width: 1340px;
+    display: flex;
+}
+.white__logo__img{
+    padding: 63px 46px;
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 100%;
+    margin: 0px 120px 0px 93px;
+}
+.white__logo{
+    width: 148px;
+    height: 114px;
+}
+.about__title{
+    margin: 101px 0px;
+    font-family: RalewayBold, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.about__text{
+    color: #000;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.about__all__text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/*Тут стили для Footer*/
+footer{
+    margin: 0 auto;
+    margin-top: 181px;
+    max-width: 1340px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__menu__nav{
+    list-style: none;
+    line-height: 25px;
+}
+.footer__menu__ul{
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    line-height: 22px;
+}
+.footer__menu__ul__first{
+    text-decoration: none;
+}
+.footer__images{
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__img{
+    height: 48px;
+    width: auto;
+}
