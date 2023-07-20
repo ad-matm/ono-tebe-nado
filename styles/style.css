@@ -1,12 +1,15 @@
 /*Здесь у меня стили для Header*/
 header{
     max-width: 1340px;
-    height: 109px;
+    min-height: 109px;
     margin: 0 auto;
     margin-top: 92px;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     margin-bottom: 92px;
     color: #000;
+}
+.header__li{
+    text-decoration: none;
 }
 .header__menu{
     max-width: 1340px;
@@ -15,11 +18,12 @@ header{
     align-items: center;
     justify-items: center;
 }
-.header__block__contact{
-    justify-self: end;
-}
-.header__block__nav{
+.header__menu__ul__nav{
     justify-self: start;
+}
+.header__menu__ul__nav li{
+    text-transform: lowercase;
+    margin-right: 32px;
 }
 .logo-black{
     width: 148px;
@@ -33,12 +37,8 @@ header{
     font-size: 18px;
     line-height: 21px;
 }
-a.header__link{
-    margin-right: 32px;
-    text-decoration: none;
-}
-.header__li__a_middle,
-.header__li__a_last{
+.header__li__lots,
+.header__li__auction{
     border-bottom: 1px solid black;
 }
 .header__menu__ul__contact,
@@ -50,6 +50,7 @@ a.header__link{
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
+    justify-self: end;
 }
 .header__menu__ul__nav li{
     text-decoration: none;
@@ -64,7 +65,6 @@ a.header__link{
     background-size: 1440px auto;
     background-repeat: no-repeat;
     max-width: 1440px;
-    max-height: 757px;
     margin: 0 auto;
     padding: 0px 50px 50px 50px;
 }
@@ -72,34 +72,29 @@ h1{
     color: #FFF;
     font-family: RalewayBold, Arial, Helvetica, sans-serif;
     font-size: 100px;
-    font-style: normal;
     letter-spacing: 30px;
     text-transform: uppercase;
-    padding-top: 165px;
+    padding-top: 166px;
     margin-bottom: 138px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
-.title__ono{
+.title__item__first{
     align-self: flex-start;
     line-height: 115px;
 }
-.title__tebe{
+.title__item__second{
     align-self: center;
     line-height: 100px;
 }
-.title__nado{
+.title__item__third{
     width: 418px;
     align-self: flex-end;
     line-height: 100px;
 }
-.title__ls__60px{
+.title-item-lettespacing{
     letter-spacing: 60px;
-}
-.title__ono-tebe-nado{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 .cover__footer{
     display: flex;
@@ -114,9 +109,8 @@ h1{
     line-height: 28px;
     text-transform: uppercase;
     margin-right: 78px;
-    word-spacing: 12px;
-    word-spacing: 0.5px;
-    letter-spacing: 2.5px;
+    word-spacing: 16.7px;
+    letter-spacing: 0.25px;
 }
 .cover__button{
     border: 1px solid #FFF;
@@ -133,8 +127,16 @@ h1{
 .lots{
     margin: 0 auto;
     max-width: 1340px;
+    margin-top: 180px;
 }
-.sub_title__lots{
+.lot{
+    color: #000;
+    font-family: RalewayBold, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0px 0px 27px 40px;
+}
+.sub__title__lots{
     margin: 180px 0px 27px 40px;
     color: #000;
     font-family: RalewayBold, Arial, Helvetica, sans-serif;
@@ -154,32 +156,31 @@ h1{
     text-decoration-line: underline;
     text-transform: uppercase;
 }
-.lot__1, 
-.lot__2,
-.lot__3{
-    height: 450px;
-    display: flex;
-    flex-direction: column;
+.lot__movie, 
+.lot__book,
+.lot__picture{
+    list-style: none;
+    min-height: 450px;
     padding: 50px 40px;
     margin-bottom: 30px;
+    background-size: 430px auto;
+    background-repeat: no-repeat;
+}
+.lots__link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     justify-content: space-between;
 }
-
-.lot__1{
+.lot__movie{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-01.jpg);
-    background-size: 430px auto;
-    background-repeat: no-repeat;
 }
-.lot__2{
+.lot__book{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-02.jpg);
-    background-size: 430px auto;
-    background-repeat: no-repeat;
 }
-.lot__3{
-    margin-right: 0px;
+.lot__picture{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-03.jpg);
-    background-size: 430px auto;
-    background-repeat: no-repeat;
 }
 .lots__text{
     color: #FFF;
@@ -188,7 +189,7 @@ h1{
     font-weight: 400;
     line-height: 24px;
 }
-.lots__link{
+.lots__button__more{
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -261,5 +262,5 @@ footer{
 }
 .footer__img{
     height: 48px;
-    width: auto;
+    width: 48px;
 }
