@@ -11,70 +11,73 @@
   </head>
   <body>
     <!--Начало шапки сайта-->
-    <header>
-      <div class="header__menu">
-        <ul class="header__menu__ul__nav">
-          <li><a href="https://www.youtube.com/" class="header__li    header__li__active">главная</a></li>
-          <li><a href="https://www.youtube.com/" class="header__li    header__li__lots">посмотреть лоты</a></li>
-          <li><a href="https://www.youtube.com/" class="header__li    header__li__auction">Об аукционе</a></li>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav__menu">
+          <li><a href="https://www.youtube.com/" class="header__menu    header__menu__main">главная</a></li>
+          <li><a href="https://www.youtube.com/" class="header__menu    header__menu__lots">посмотреть лоты</a></li>
+          <li><a href="https://www.youtube.com/" class="header__menu    header__menu__auction">Об аукционе</a></li>
         </ul>
         <a href="https://www.youtube.com/"><img class="logo-black" src="./images/logo-black.svg" alt="Лого ОНО ТЕБЕ НАДО в черном"></a>
-        <ul class="header__menu__ul__contact">
+        <ul class="header__nav__contact">
           <li><a href="tel:+70000000">+9 999 555 5555</a></li>
           <li><a href="mailto:mail@example.com">info@sobaka.ge</a></li>
           <li><address>наб. Принсенграхт 263-265, <br>Амстердам</address></li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <!--Тут начинается основная контентная часть-->
-    <main>
+    <main class="main__section">
       <!--Тут блок "оно тебе надо" начинается-->
       <section class="cover">
         <h1>
-          <span class="title__item__first">о<span class="title-item-lettespacing">но</span></span>
-          <span class="title__item__second">те<span class="title-item-lettespacing">бе</span></span>
-          <span class="title__item__third"><span class="title-item-lettespacing">н</span>адо</span>
+          <span class="title__item__first">о<span class="title__lettespacing">но</span></span>
+
+          <span class="title__item__second">те<span class="title__lettespacing">бе</span></span>
+
+          <span class="title__item__third"><span 
+          class="title__lettespacing">н</span>адо</span>
         </h1>
-        <section class="cover__footer">
-          <p class="cover_text">Аукцион    вещей,    в    которые    никто    не     верил</p>
-          <a class="cover__button" href="https://www.youtube.com/" target="_blank">Сделать ставку</a>
-        </section>
+        <div class="cover__footer">
+          <p class="cover__text">Аукцион    вещей,    в    которые    никто    не     верил</p>
+          <button class="cover__button">Сделать ставку</button>
+        </div>
       </section>
 
       <!--Тут блок "лоты" начинается-->
       <section class="lots">
-        <h2 class="lot">Лоты</h2>
+        <h2 class="lots__title">Лоты</h2>
         <!--Тут Лот 1-->
         <ul class="lots__containers">
-          <li class="lot__movie">
+          <li class="lot__movie lots__card">
             <a class="lots__link" href="https://www.pinterest.com/" target="_blank">
-              <h3 class="lots__title">Фильм режиссёра, который бросил киношколу</h3>
+              <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
               <p class="lots__text">Не просто бросил, а ушёл с первой лекции.Какой была бы ваша ставка, если бы вы не знали, что режиссёр —Пол Томас Андерсон?</p>
             </a>
           </li>
-          <li class="lot__book">
+          <li class="lot__book lots__card">
             <a class="lots__link" href="https://www.pinterest.com/" target="_blank">
-              <h3 class="lots__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
               <p class="lots__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
             </a>
           </li>
-          <li class="lot__picture">
+          <li class="lot__picture lots__card">
             <a class="lots__link" href="https://www.pinterest.com/" target="_blank">
-              <h3 class="lots__title">Картина, которую <br>повторит даже 5-летний сын маминой подруги</h3>
+              <h3 class="card__title">Картина, которую <br>повторит даже 5-летний сын маминой подруги</h3>
               <p class="lots__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
             </a>
           </li>
         </ul>
-        <a href="https://www.youtube.com/" class="lots__button__more" target="_blank">посмотреть больше</a>
+        <a href="https://www.youtube.com/" class="link__more__lots" target="_blank">посмотреть больше</a>
       </section>
 
       <!--Тут блок "об аукционе" начинается-->
       <section class="about ">
-        <nav class="white__logo__img">
-          <a href="https://www.youtube.com/"><img src="./images/logo-white.svg" class="white__logo" alt="Лого ОНО ТЕБЕ НАДО в белом"></a>
-        </nav>
-        <div class="about_section">
+        <div class="white__logo__img">
+          <img src="./images/logo-white.svg" class="white__logo" alt="Лого ОНО ТЕБЕ НАДО в белом">
+        </div>
+        <div class="about__section">
           <h2 class="about__title">Об аукционе</h2>
           <div class="about__all__text">
             <p class="about__text">
@@ -90,7 +93,7 @@
     
     <!--Тут footer начинается-->
     <footer>
-      <ul class="footer__menu__nav">
+      <ul class="footer__menu__contact">
         <li><a href="tel:+70000000">+9 999 555 5555</a></li>
         <li><a href="mailto:mail@example.com">info@sobaka.ge</a></li>
         <li><address>наб. Принсенграхт 263-265,<br> Амстердам</address></li>
@@ -102,11 +105,11 @@
           <li><a href="https://www.youtube.com/">об аукционе</a></li>
         </ul>
       </nav>
-      <nav class="footer__images">
-        <a href="https://www.youtube.com/"><img class="footer__img" src="./images/yt.svg" alt="Логотип YouTube"></a> 
-        <a href="https://www.vk.com/"><img class="footer__img" src="./images/vk.svg" alt="Логотип ВКонтакте"></a>
-        <a href="https://www.pinterest.com/"><img class="footer__img" src="./images/pinterest.svg" alt="Логотип Pinterest"></img></a> 
-      </nav>
+      <ul class="footer__images">
+        <li><a href="https://www.youtube.com/"><img class="footer__img" src="./images/yt.svg" alt="Логотип YouTube"></a> </li>
+        <li><a href="https://www.vk.com/"><img class="footer__img" src="./images/vk.svg" alt="Логотип ВКонтакте"></a></li>
+        <li><a href="https://www.pinterest.com/"><img class="footer__img" src="./images/pinterest.svg" alt="Логотип Pinterest"></a></li>
+      </ul>        
     </footer>
   </body>
 </html>

@@ -1,5 +1,5 @@
 /*Здесь у меня стили для Header*/
-header{
+.header {
     max-width: 1340px;
     min-height: 109px;
     margin: 0 auto;
@@ -8,41 +8,41 @@ header{
     margin-bottom: 92px;
     color: #000;
 }
-.header__li{
+.header__menu {
+    border-bottom: 1px solid black;
     text-decoration: none;
 }
-.header__menu{
+.header__nav {
     max-width: 1340px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
 }
-.header__menu__ul__nav{
+.header__nav__menu {
     justify-self: start;
 }
-.header__menu__ul__nav li{
+.header__nav__menu li {
     text-transform: lowercase;
     margin-right: 32px;
 }
-.logo-black{
+.logo-black {
     width: 148px;
     height: 105px;
 }
-.header__menu__ul__nav, 
-.footer__menu__ul{
+.header__nav__menu, 
+.footer__menu__ul {
     display: flex;
     flex-direction: row;
     list-style: circle;
     font-size: 18px;
     line-height: 21px;
 }
-.header__li__lots,
-.header__li__auction{
-    border-bottom: 1px solid black;
+.header__menu__main {
+    border-bottom:none;
 }
-.header__menu__ul__contact,
-.footer__menu__nav{
+.header__nav__contact,
+.footer__menu__nav {
     list-style: none;
     font-size: 18px;
     width: 240px;
@@ -52,15 +52,15 @@ header{
     justify-content:flex-end;
     justify-self: end;
 }
-.header__menu__ul__nav li{
+.header__nav__menu li {
     text-decoration: none;
 }
-.header__menu__ul__nav li:first-child{
+.header__nav__menu li:first-child {
     list-style: none;
 }
 
 /*Здесь начинаются стили для блока "Оно Тебе Надо"*/
-.cover{
+.cover {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/cover.jpg);
     background-size: 1440px auto;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ header{
     margin: 0 auto;
     padding: 0px 50px 50px 50px;
 }
-h1{
+h1 {
     color: #FFF;
     font-family: RalewayBold, Arial, Helvetica, sans-serif;
     font-size: 100px;
@@ -80,28 +80,28 @@ h1{
     flex-direction: column;
     gap: 20px;
 }
-.title__item__first{
+.title__item__first {
     align-self: flex-start;
     line-height: 115px;
 }
-.title__item__second{
+.title__item__second {
     align-self: center;
     line-height: 100px;
 }
-.title__item__third{
+.title__item__third {
     width: 418px;
     align-self: flex-end;
     line-height: 100px;
 }
-.title-item-lettespacing{
+.title__lettespacing {
     letter-spacing: 60px;
 }
-.cover__footer{
+.cover__footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.cover_text{
+.cover__text {
     color: #FFF;
     text-align: center;
     font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -112,7 +112,8 @@ h1{
     word-spacing: 16.7px;
     letter-spacing: 0.25px;
 }
-.cover__button{
+.cover__button {
+    background: rgba(0, 0, 0, 0);
     border: 1px solid #FFF;
     padding: 12px 32px;
     text-decoration: none;
@@ -122,33 +123,36 @@ h1{
     font-size: 22px;
     text-transform: uppercase;
 }
+.cover__button:hover{
+    cursor: pointer;
+}
 
 /*Тут у меня стили для "Лоты"*/
-.lots{
+.lots {
     margin: 0 auto;
     max-width: 1340px;
     margin-top: 180px;
 }
-.lot{
+.lots__title {
     color: #000;
     font-family: RalewayBold, Arial, Helvetica, sans-serif;
     font-size: 40px;
     text-transform: uppercase;
     margin: 0px 0px 27px 40px;
 }
-.sub__title__lots{
+.sub__title__lots {
     margin: 180px 0px 27px 40px;
     color: #000;
     font-family: RalewayBold, Arial, Helvetica, sans-serif;
     font-size: 40px;
     text-transform: uppercase;
 }
-.lots__containers{
+.lots__containers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-.lots__title{
+.card__title {
     color: #FFF;
     font-family: RalewayBold, Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -156,9 +160,7 @@ h1{
     text-decoration-line: underline;
     text-transform: uppercase;
 }
-.lot__movie, 
-.lot__book,
-.lot__picture{
+.lots__card {
     list-style: none;
     min-height: 450px;
     padding: 50px 40px;
@@ -166,30 +168,30 @@ h1{
     background-size: 430px auto;
     background-repeat: no-repeat;
 }
-.lots__link{
+.lots__link {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
 }
-.lot__movie{
+.lot__movie {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-01.jpg);
 }
-.lot__book{
+.lot__book {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-02.jpg);
 }
-.lot__picture{
+.lot__picture {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/card-lot-03.jpg);
 }
-.lots__text{
+.lots__text {
     color: #FFF;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
 }
-.lots__button__more{
+.link__more__lots {
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -198,13 +200,13 @@ h1{
 }
 
 /*Тут стили для блока "Об аукционе"*/
-.about{
+.about {
     margin: 0 auto;
     margin-top: 182px;
     max-width: 1340px;
     display: flex;
 }
-.white__logo__img{
+.white__logo__img {
     padding: 63px 46px;
     width: 240px;
     height: 240px;
@@ -212,55 +214,57 @@ h1{
     border-radius: 100%;
     margin: 0px 120px 0px 93px;
 }
-.white__logo{
+.white__logo {
     width: 148px;
     height: 114px;
 }
-.about__title{
+.about__title {
     margin: 101px 0px;
     font-family: RalewayBold, Arial, Helvetica, sans-serif;
     font-size: 40px;
     text-transform: uppercase;
 }
-.about__text{
+.about__text {
     color: #000;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
-.about__all__text{
+.about__all__text {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
 /*Тут стили для Footer*/
-footer{
+footer {
     margin: 0 auto;
     margin-top: 181px;
     max-width: 1340px;
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
 }
-.footer__menu__nav{
+.footer__menu__contact {
     list-style: none;
     line-height: 25px;
 }
-.footer__menu__ul{
+.footer__menu__ul {
     align-items: center;
     list-style: none;
     flex-direction: column;
     line-height: 22px;
 }
-.footer__menu__ul__first{
+.footer__menu__ul__first {
     text-decoration: none;
 }
-.footer__images{
+.footer__images {
+    list-style: none;
     width: 240px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.footer__img{
+.footer__img {
     height: 48px;
     width: 48px;
 }
