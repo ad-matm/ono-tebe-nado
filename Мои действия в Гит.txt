@@ -1,0 +1,152 @@
+
+admin@MyLaptop MINGW64 /
+$ pwd
+/
+
+admin@MyLaptop MINGW64 /
+$ cd c:/
+
+admin@MyLaptop MINGW64 /c
+$ cd users/admin/desktop/Projects
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects (main)
+$ ls
+ono-tebe-nado/
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects (main)
+$ cd ono-tebe-nado
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   fonts/fonts.css
+        modified:   images/logo-black.svg
+        modified:   images/logo-white.svg
+        modified:   images/pinterest.svg
+        modified:   images/vk.svg
+        modified:   images/yt.svg
+        modified:   index.html
+        modified:   styles/global.css
+        modified:   styles/style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git add -A
+warning: in the working copy of 'fonts/fonts.css', LF will be replaced by CRLF t
+he next time Git touches it
+warning: in the working copy of 'images/logo-black.svg', LF will be replaced by
+CRLF the next time Git touches it
+warning: in the working copy of 'images/logo-white.svg', LF will be replaced by
+CRLF the next time Git touches it
+warning: in the working copy of 'images/pinterest.svg', LF will be replaced by C
+RLF the next time Git touches it
+warning: in the working copy of 'images/vk.svg', LF will be replaced by CRLF the
+ next time Git touches it
+warning: in the working copy of 'images/yt.svg', LF will be replaced by CRLF the
+ next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the ne
+xt time Git touches it
+warning: in the working copy of 'styles/global.css', LF will be replaced by CRLF
+ the next time Git touches it
+warning: in the working copy of 'styles/style.css', LF will be replaced by CRLF
+the next time Git touches it
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        modified:   fonts/fonts.css
+        modified:   index.html
+        modified:   styles/global.css
+        modified:   styles/style.css
+
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git commit -m "ono-tebe-nado"
+[main fa401d4] ono-tebe-nado
+ 5 files changed, 383 insertions(+), 14 deletions(-)
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git push -u origin main
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 4.83 KiB | 2.42 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:ad-matm/ono-tebe-nado.git
+   51d7c29..fa401d4  main -> main
+branch 'main' set up to track 'origin/main'.
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ pwd
+/c/users/admin/desktop/Projects/ono-tebe-nado
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git add -A
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git commit -m "ono-tebe-nado edited"
+[main a36f37d] ono-tebe-nado edited
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 308 bytes | 308.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:ad-matm/ono-tebe-nado.git
+   fa401d4..a36f37d  main -> main
+branch 'main' set up to track 'origin/main'.
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+admin@MyLaptop MINGW64 /c/users/admin/desktop/Projects/ono-tebe-nado (main)
+$
